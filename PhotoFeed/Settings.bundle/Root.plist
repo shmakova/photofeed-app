@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>StringsTable</key>
+	<string>Root</string>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Feed Settings</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string>Search Tag</string>
+			<key>Key</key>
+			<string>PhotoFeedURLString</string>
+			<key>DefaultValue</key>
+			<string>https://api.flickr.com/services/feeds/photos_public.gne?tags=kitten&amp;format=json&amp;nojsoncallback=1</string>
+			<key>Titles</key>
+			<array>
+				<string>Kittens</string>
+				<string>Pugs</string>
+				<string>Pizza</string>
+			</array>
+			<key>Values</key>
+			<array>
+				<string>https://api.flickr.com/services/feeds/photos_public.gne?tags=kitten&amp;format=json&amp;nojsoncallback=1</string>
+				<string>https://api.flickr.com/services/feeds/photos_public.gne?tags=pug&amp;format=json&amp;nojsoncallback=1</string>
+				<string>https://api.flickr.com/services/feeds/photos_public.gne?tags=pizza&amp;format=json&amp;nojsoncallback=1</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
