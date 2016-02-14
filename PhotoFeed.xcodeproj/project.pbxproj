@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B5707CA1C70D9AC00E878D3 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3B5707C91C70D9AC00E878D3 /* Settings.bundle */; };
 		4AEB15381C3F125F0047EDF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEB15371C3F125F0047EDF7 /* AppDelegate.swift */; };
 		4AEB153A1C3F125F0047EDF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEB15391C3F125F0047EDF7 /* ViewController.swift */; };
 		4AEB153D1C3F125F0047EDF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AEB153B1C3F125F0047EDF7 /* Main.storyboard */; };
 		4AEB153F1C3F125F0047EDF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AEB153E1C3F125F0047EDF7 /* Assets.xcassets */; };
 		4AEB15421C3F125F0047EDF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AEB15401C3F125F0047EDF7 /* LaunchScreen.storyboard */; };
+		4AEB154A1C4019E80047EDF7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4AEB15491C4019E80047EDF7 /* Settings.bundle */; };
+		4AEB154C1C404E040047EDF7 /* ImageFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEB154B1C404E040047EDF7 /* ImageFeedTableViewController.swift */; };
+		4AEB154E1C404E190047EDF7 /* ImageFeedItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEB154D1C404E190047EDF7 /* ImageFeedItemTableViewCell.swift */; };
+		4AEB15501C404E290047EDF7 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEB154F1C404E290047EDF7 /* Feed.swift */; };
+		4AEB15521C404E330047EDF7 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEB15511C404E330047EDF7 /* FeedItem.swift */; };
+		4AEB15541C405BDF0047EDF7 /* photos_public.gne.js in Resources */ = {isa = PBXBuildFile; fileRef = 4AEB15531C405BDF0047EDF7 /* photos_public.gne.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3B5707C91C70D9AC00E878D3 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		4AEB15341C3F125F0047EDF7 /* PhotoFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AEB15371C3F125F0047EDF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AEB15391C3F125F0047EDF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,12 @@
 		4AEB153E1C3F125F0047EDF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AEB15411C3F125F0047EDF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AEB15431C3F125F0047EDF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AEB15491C4019E80047EDF7 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		4AEB154B1C404E040047EDF7 /* ImageFeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFeedTableViewController.swift; sourceTree = "<group>"; };
+		4AEB154D1C404E190047EDF7 /* ImageFeedItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFeedItemTableViewCell.swift; sourceTree = "<group>"; };
+		4AEB154F1C404E290047EDF7 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		4AEB15511C404E330047EDF7 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		4AEB15531C405BDF0047EDF7 /* photos_public.gne.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = photos_public.gne.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +68,16 @@
 			children = (
 				4AEB15371C3F125F0047EDF7 /* AppDelegate.swift */,
 				4AEB15391C3F125F0047EDF7 /* ViewController.swift */,
+				4AEB154B1C404E040047EDF7 /* ImageFeedTableViewController.swift */,
+				4AEB154D1C404E190047EDF7 /* ImageFeedItemTableViewCell.swift */,
+				4AEB154F1C404E290047EDF7 /* Feed.swift */,
+				4AEB15511C404E330047EDF7 /* FeedItem.swift */,
 				4AEB153B1C3F125F0047EDF7 /* Main.storyboard */,
 				4AEB153E1C3F125F0047EDF7 /* Assets.xcassets */,
 				4AEB15401C3F125F0047EDF7 /* LaunchScreen.storyboard */,
+				4AEB15531C405BDF0047EDF7 /* photos_public.gne.js */,
 				4AEB15431C3F125F0047EDF7 /* Info.plist */,
-				3B5707C91C70D9AC00E878D3 /* Settings.bundle */,
+				4AEB15491C4019E80047EDF7 /* Settings.bundle */,
 			);
 			path = PhotoFeed;
 			sourceTree = "<group>";
@@ -125,10 +140,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B5707CA1C70D9AC00E878D3 /* Settings.bundle in Resources */,
+				4AEB154A1C4019E80047EDF7 /* Settings.bundle in Resources */,
 				4AEB15421C3F125F0047EDF7 /* LaunchScreen.storyboard in Resources */,
 				4AEB153F1C3F125F0047EDF7 /* Assets.xcassets in Resources */,
 				4AEB153D1C3F125F0047EDF7 /* Main.storyboard in Resources */,
+				4AEB15541C405BDF0047EDF7 /* photos_public.gne.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AEB154E1C404E190047EDF7 /* ImageFeedItemTableViewCell.swift in Sources */,
+				4AEB15501C404E290047EDF7 /* Feed.swift in Sources */,
+				4AEB15521C404E330047EDF7 /* FeedItem.swift in Sources */,
+				4AEB154C1C404E040047EDF7 /* ImageFeedTableViewController.swift in Sources */,
 				4AEB153A1C3F125F0047EDF7 /* ViewController.swift in Sources */,
 				4AEB15381C3F125F0047EDF7 /* AppDelegate.swift in Sources */,
 			);
@@ -290,7 +310,6 @@
 				4AEB15481C3F125F0047EDF7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

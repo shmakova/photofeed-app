@@ -24,9 +24,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidBecomeActive(application: UIApplication) {
         let urlString = NSUserDefaults.standardUserDefaults().stringForKey("PhotoFeedURLString")
         print(urlString)
+        
+        guard let foundURLString = urlString else {
+            return
+        }
+        
+        if let url = NSURL(string: foundURLString) {
+            self.updateFeed(url, completion: { (feed) -> Void in
+                let viewController = application.windows[0].rootViewController as? ImageFeedTableViewController
+                viewController?.feed = feed
+            })
+        }
     }
 
-
+    
+    func updateFeed(url: NSURL, completion: (feed: Feed?) -> Void) {
+        let dataFile = NSBundle.mainBundle().URLForResource("photos_public.gne", withExtension: ".js")!
+        let data = NSData(contentsOfURL: dataFile)!
+        let feed = Feed(data: data, sourceURL: url)
+        completion(feed: feed)
+    }
 
 
 }
